@@ -18,6 +18,13 @@
 extern "C" {
 #endif
 
+
+/*------------------------------------------------------------------------------
+Includes 
+------------------------------------------------------------------------------*/
+#include "stm32h7xx_hal.h"
+
+
 /* Rev 1.0 */
 #ifdef A0002_REV1
 	/*-------------------------------------------------------------------------
@@ -72,6 +79,23 @@ extern "C" {
 	#define FLASH_WP_GPIO_PORT        GPIOD
 
 	/* SD Card */
+
+	/*--------------------------------------------------------------------------
+	 MCU Peripheral Configuration 
+	--------------------------------------------------------------------------*/
+
+	/* MCU Peripheral Handles */
+	extern I2C_HandleTypeDef hi2c1;   /* Baro I2C  */
+	extern SPI_HandleTypeDef hspi2;   /* Flash SPI */
+	extern I2C_HandleTypeDef hi2c2;   /* IMU I2C   */
+	extern UART_HandleTypeDef huart6; /* USB UART  */
+
+	/* Peripheral Compatibility Macros */
+	#define BARO_I2C                  hi2c1 
+	#define FLASH_SPI                 hspi2
+	#define IMU_I2C                   hi2c2
+	#define USB_HUART                 huart6
+
 
 #endif /* A0002_REV1 */
 
