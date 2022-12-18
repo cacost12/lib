@@ -17,6 +17,13 @@
 extern "C" {
 #endif
 
+
+/*------------------------------------------------------------------------------
+ Includes                                                                    
+------------------------------------------------------------------------------*/
+#include "stm32h7xx_hal.h"
+
+
 /* Rev 4.0 */
 #ifdef L0002_REV4
 	/*-------------------------------------------------------------------------
@@ -88,6 +95,19 @@ extern "C" {
 	/* Pressure transducers */
 	#define PRESSURE_GPIO_PORT        GPIOD
 
+	/*--------------------------------------------------------------------------
+	 MCU Peripheral Configuration 
+	--------------------------------------------------------------------------*/
+
+	/* Peripheral handles */
+	extern SPI_HandleTypeDef  hspi2;  /* Flash SPI    */
+	extern UART_HandleTypeDef huart1; /* USB UART     */
+	extern ADC_HandleTypeDef  hadc1;  /* Pressure ADC */
+
+	/* Peripheral Macros */
+	#define FLASH_SPI                 hspi2
+	#define USB_HUART                 huart1
+	#define PRESS_ADC                 hadc1
 
 #endif /* L0002_REV1 */
 
