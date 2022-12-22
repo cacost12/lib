@@ -51,6 +51,7 @@ Includes
 	#define FLASH_MISO_PIN            GPIO_PIN_14
 	#define FLASH_MOSI_PIN            GPIO_PIN_15
 	#define FLASH_WP_PIN              GPIO_PIN_12
+	#define FLASH_HOLD_PIN            GPIO_PIN_13
 
 	/* SD Card */
 
@@ -77,6 +78,7 @@ Includes
 	#define FLASH_MISO_GPIO_PORT      GPIOB
 	#define FLASH_MOSI_GPIO_PORT      GPIOB
 	#define FLASH_WP_GPIO_PORT        GPIOD
+	#define FLASH_HOLD_GPIO_PORT      GPIOD
 
 	/* SD Card */
 
