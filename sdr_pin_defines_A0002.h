@@ -55,6 +55,9 @@ Includes
 
 	/* SD Card */
 
+	/* Baro Pressure Sensor */
+	#define BP_INT_PIN                GPIO_PIN_3
+
 
 	/*-------------------------------------------------------------------------
 	 MCU Port Assignments                                                          
@@ -81,6 +84,9 @@ Includes
 	#define FLASH_HOLD_GPIO_PORT      GPIOD
 
 	/* SD Card */
+
+	/* Baro Pressure Sensor */
+	#define BP_INT_GPIO_PORT          GPIOE
 
 	/*--------------------------------------------------------------------------
 	 MCU Peripheral Configuration 
