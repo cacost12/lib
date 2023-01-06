@@ -93,16 +93,21 @@ Includes
 	--------------------------------------------------------------------------*/
 
 	/* MCU Peripheral Handles */
-	extern I2C_HandleTypeDef hi2c1;   /* Baro I2C  */
-	extern SPI_HandleTypeDef hspi2;   /* Flash SPI */
-	extern I2C_HandleTypeDef hi2c2;   /* IMU I2C   */
-	extern UART_HandleTypeDef huart6; /* USB UART  */
+	extern I2C_HandleTypeDef  hi2c1;  /* Baro I2C     */
+	extern SPI_HandleTypeDef  hspi2;  /* Flash SPI    */
+	extern I2C_HandleTypeDef  hi2c2;  /* IMU I2C      */
+	extern UART_HandleTypeDef huart6; /* USB UART     */
+	extern TIM_HandleTypeDef  htim4;  /* Buzzer Timer */
 
 	/* Peripheral Compatibility Macros */
 	#define BARO_I2C                  hi2c1 
 	#define FLASH_SPI                 hspi2
 	#define IMU_I2C                   hi2c2
 	#define USB_HUART                 huart6
+	#define BUZZ_TIM                  htim4
+
+	/* Timer channels */
+	#define BUZZ_TIM_CHANNEL         TIM_CHANNEL_3
 
 
 #endif /* A0002_REV1 */
