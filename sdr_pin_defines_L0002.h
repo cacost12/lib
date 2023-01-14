@@ -100,14 +100,16 @@ extern "C" {
 	--------------------------------------------------------------------------*/
 
 	/* Peripheral handles */
-	extern SPI_HandleTypeDef  hspi2;  /* Flash SPI    */
-	extern UART_HandleTypeDef huart1; /* USB UART     */
-	extern ADC_HandleTypeDef  hadc1;  /* Pressure ADC */
+	extern SPI_HandleTypeDef  hspi2;  /* Flash SPI     */
+	extern UART_HandleTypeDef huart1; /* USB UART      */
+	extern ADC_HandleTypeDef  hadc1;  /* Pressure ADC  */
+	extern ADC_HandleTypeDef  hadc2;  /* Load Cell ADC */
 
 	/* Peripheral Macros */
 	#define FLASH_SPI                 hspi2
 	#define USB_HUART                 huart1
 	#define PRESS_ADC                 hadc1
+	#define LOADCELL_ADC              hadc2
 
 #endif /* L0002_REV1 */
 
