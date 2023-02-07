@@ -65,10 +65,10 @@ extern "C" {
 	--------------------------------------------------------------------------*/
 
 	/* Peripheral handles */
-	extern UART_HandleTypeDef huart4; /* USB UART */
+	extern UART_HandleTypeDef huart3; /* USB UART */
 
 	/* Peripheral Macros */
-	#define USB_HUART         huart4
+	#define USB_HUART         huart3
 
 #endif /* L0005_REV2 */
 
