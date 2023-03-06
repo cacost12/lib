@@ -45,6 +45,8 @@ extern "C" {
 	/* Servo Valves */
 	#define LOX_ENC_A_PIN        GPIO_PIN_8
 	#define LOX_ENC_B_PIN        GPIO_PIN_9
+	#define KER_ENC_A_PIN        GPIO_PIN_6
+	#define KER_ENC_B_PIN        GPIO_PIN_15
 
 
 	/*-------------------------------------------------------------------------
@@ -65,6 +67,8 @@ extern "C" {
 	
 	/* Servo Valves */
 	#define LOX_ENC_GPIO_PORT    GPIOC
+	#define KER_ENC_A_GPIO_PORT  GPIOC
+	#define KER_ENC_B_GPIO_PORT  GPIOD
 
 
 	/*--------------------------------------------------------------------------
