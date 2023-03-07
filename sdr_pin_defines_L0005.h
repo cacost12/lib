@@ -83,6 +83,10 @@ extern "C" {
 	#define USB_HUART         huart3
 	#define VALVE_TIM         htim15
 
+	/* Timer Channels */
+	#define LOX_TIM_CHANNEL   TIM_CHANNEL_1
+	#define FUEL_TIM_CHANNEL  TIM_CHANNEL_2
+
 #endif /* L0005_REV2 */
 
 
