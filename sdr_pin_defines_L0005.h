@@ -76,10 +76,12 @@ extern "C" {
 	--------------------------------------------------------------------------*/
 
 	/* Peripheral handles */
-	extern UART_HandleTypeDef huart3; /* USB UART */
+	extern UART_HandleTypeDef huart3; /* USB UART                      */
+	extern TIM_HandleTypeDef  htim15; /* Valve control PWM signals     */
 
 	/* Peripheral Macros */
 	#define USB_HUART         huart3
+	#define VALVE_TIM         htim15
 
 #endif /* L0005_REV2 */
 
