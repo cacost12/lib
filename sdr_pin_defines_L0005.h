@@ -160,12 +160,20 @@ extern "C" {
 	--------------------------------------------------------------------------*/
 
 	/* Peripheral handles */
+	extern TIM_HandleTypeDef  htim2;  /* Fuel main valve control PWM signals  */
+	extern TIM_HandleTypeDef  htim15; /* LOX main valve control PWM signals   */
 	extern UART_HandleTypeDef huart1; /* USB UART                             */
 	extern UART_HandleTypeDef huart3; /* Valve Control UART                   */
 
 	/* Peripheral Macros */
+	#define VALVE_LOX_TIM     htim15
+	#define VALVE_FUEL_TIM    htim2
 	#define USB_HUART         huart1
 	#define VALVE_HUART       huart3
+
+	/* Timer Channels */
+	#define VALVE_LOX_TIM_CHANNEL    TIM_CHANNEL_1
+	#define VALVE_FUEL_TIM_CHANNEL   TIM_CHANNEL_4
 
 #endif /* L0005_REV2 */
 
