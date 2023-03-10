@@ -154,10 +154,12 @@ extern "C" {
 	--------------------------------------------------------------------------*/
 
 	/* Peripheral handles */
-	extern UART_HandleTypeDef huart3; /* USB UART                      */
+	extern UART_HandleTypeDef huart1; /* USB UART                             */
+	extern UART_HandleTypeDef huart3; /* Valve Control UART                   */
 
 	/* Peripheral Macros */
-	#define USB_HUART         huart3
+	#define USB_HUART         huart1
+	#define VALVE_HUART       huart3
 
 #endif /* L0005_REV2 */
 
