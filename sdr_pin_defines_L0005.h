@@ -95,6 +95,70 @@ extern "C" {
 	#define LOX_TIM_CHANNEL   TIM_CHANNEL_1
 	#define FUEL_TIM_CHANNEL  TIM_CHANNEL_2
 
+/* Rev 3.0 */
+#elif defined( L0005_REV3 )
+	/*-------------------------------------------------------------------------
+	 MCU Pin Assignments                                                          
+	--------------------------------------------------------------------------*/
+
+	/* LEDs */
+	#define STATUS_B_PIN         GPIO_PIN_10
+	#define STATUS_G_PIN         GPIO_PIN_8
+	#define STATUS_R_PIN         GPIO_PIN_9
+
+	/* Solenoids */
+	#define SOL1_PIN             GPIO_PIN_2
+	#define SOL2_PIN             GPIO_PIN_3
+	#define SOL3_PIN             GPIO_PIN_4
+	#define SOL4_PIN             GPIO_PIN_0
+	#define SOL5_PIN             GPIO_PIN_1
+	#define SOL6_PIN             GPIO_PIN_2
+
+	/* Servo Valves */
+	#define LOX_ENC_A_PIN        GPIO_PIN_8
+	#define LOX_ENC_B_PIN        GPIO_PIN_9
+	#define KER_ENC_A_PIN        GPIO_PIN_14
+	#define KER_ENC_B_PIN        GPIO_PIN_15
+	#define LOX_EN_PIN           GPIO_PIN_8
+	#define LOX_DIR_PIN          GPIO_PIN_12
+	#define KER_EN_PIN           GPIO_PIN_11
+	#define KER_DIR_PIN          GPIO_PIN_7
+
+
+	/*-------------------------------------------------------------------------
+	 MCU Port Assignments                                                          
+	--------------------------------------------------------------------------*/
+
+	/* LEDs */
+	#define STATUS_GPIO_PORT     GPIOD
+
+	/* Solenoids */
+	#define SOL1_GPIO_PORT       GPIOE
+	#define SOL2_GPIO_PORT       GPIOE
+	#define SOL3_GPIO_PORT       GPIOE
+	#define SOL4_GPIO_PORT       GPIOA
+	#define SOL5_GPIO_PORT       GPIOA
+	#define SOL6_GPIO_PORT       GPIOA
+	
+	/* Servo Valves */
+	#define LOX_ENC_GPIO_PORT    GPIOC
+	#define KER_ENC_GPIO_PORT    GPIOD
+	#define LOX_EN_GPIO_PORT     GPIOA
+	#define LOX_DIR_GPIO_PORT    GPIOA
+	#define KER_EN_GPIO_PORT     GPIOA
+	#define KER_DIR_GPIO_PORT    GPIOC
+
+
+	/*--------------------------------------------------------------------------
+	 MCU Peripheral Configuration 
+	--------------------------------------------------------------------------*/
+
+	/* Peripheral handles */
+	extern UART_HandleTypeDef huart3; /* USB UART                      */
+
+	/* Peripheral Macros */
+	#define USB_HUART         huart3
+
 #endif /* L0005_REV2 */
 
 
