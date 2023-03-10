@@ -124,6 +124,9 @@ extern "C" {
 	#define KER_EN_PIN           GPIO_PIN_11
 	#define KER_DIR_PIN          GPIO_PIN_7
 
+	/* USB */
+	#define USB_DETECT_PIN       GPIO_PIN_13
+
 
 	/*-------------------------------------------------------------------------
 	 MCU Port Assignments                                                          
@@ -147,6 +150,9 @@ extern "C" {
 	#define LOX_DIR_GPIO_PORT    GPIOA
 	#define KER_EN_GPIO_PORT     GPIOA
 	#define KER_DIR_GPIO_PORT    GPIOC
+
+	/* USB */
+	#define USB_DETECT_GPIO_PORT GPIOD
 
 
 	/*--------------------------------------------------------------------------
