@@ -127,6 +127,10 @@ extern "C" {
 	/* USB */
 	#define USB_DETECT_PIN       GPIO_PIN_13
 
+	/* Photogates */
+	#define LOX_PHOTOGATE_PIN   GPIO_PIN_0
+	#define FUEL_PHOTOGATE_PIN  GPIO_PIN_1
+
 
 	/*-------------------------------------------------------------------------
 	 MCU Port Assignments                                                          
@@ -153,6 +157,9 @@ extern "C" {
 
 	/* USB */
 	#define USB_DETECT_GPIO_PORT GPIOD
+
+	/* Photogates */
+	#define PHOTOGATE_GPIO_PORT  GPIOC
 
 
 	/*--------------------------------------------------------------------------
