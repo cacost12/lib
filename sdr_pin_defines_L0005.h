@@ -121,6 +121,8 @@ extern "C" {
 	#define KER_ENC_B_PIN        GPIO_PIN_15
 	#define LOX_EN_PIN           GPIO_PIN_8
 	#define LOX_DIR_PIN          GPIO_PIN_12
+	#define LOX_PUL_PIN          GPIO_PIN_5
+	#define KER_PUL_PIN          GPIO_PIN_3
 	#define KER_EN_PIN           GPIO_PIN_11
 	#define KER_DIR_PIN          GPIO_PIN_7
 
@@ -152,8 +154,10 @@ extern "C" {
 	#define KER_ENC_GPIO_PORT    GPIOD
 	#define LOX_EN_GPIO_PORT     GPIOA
 	#define LOX_DIR_GPIO_PORT    GPIOA
+	#define LOX_PUL_GPIO_PORT    GPIOE
 	#define KER_EN_GPIO_PORT     GPIOA
 	#define KER_DIR_GPIO_PORT    GPIOC
+	#define KER_PUL_GPIO_PORT    GPIOA
 
 	/* USB */
 	#define USB_DETECT_GPIO_PORT GPIOD
