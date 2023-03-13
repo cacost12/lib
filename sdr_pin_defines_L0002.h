@@ -112,12 +112,13 @@ extern "C" {
 	--------------------------------------------------------------------------*/
 
 	/* Peripheral handles */
-	extern ADC_HandleTypeDef  hadc1;  /* Pressure ADC       */
-	extern ADC_HandleTypeDef  hadc2;  /* Load Cell ADC      */
-	extern I2C_HandleTypeDef  hi2c1;  /* Thermocouple I2C   */
-	extern SPI_HandleTypeDef  hspi2;  /* Flash SPI          */
-	extern UART_HandleTypeDef huart1; /* USB UART           */
-	extern UART_HandleTypeDef huart2; /* Valve control UART */
+	extern ADC_HandleTypeDef          hadc1;  /* Pressure ADC       */
+	extern ADC_HandleTypeDef          hadc2;  /* Load Cell ADC      */
+	extern I2C_HandleTypeDef          hi2c1;  /* Thermocouple I2C   */
+	extern SPI_HandleTypeDef          hspi2;  /* Flash SPI          */
+	extern UART_HandleTypeDef         huart1; /* USB UART           */
+	extern UART_HandleTypeDef         huart2; /* Valve control UART */
+	extern UART_HandleTypeDef         huart4; /* Wireless UART      */
 
 	/* Peripheral Macros */
 	#define PRESS_ADC                 hadc1
@@ -126,6 +127,7 @@ extern "C" {
 	#define FLASH_SPI                 hspi2
 	#define USB_HUART                 huart1
 	#define VALVE_HUART               huart2
+	#define XBEE_HUART                huart4
 
 #endif /* L0002_REV1 */
 

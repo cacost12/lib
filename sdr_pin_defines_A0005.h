@@ -117,10 +117,12 @@ extern "C" {
 ------------------------------------------------------------------------------*/
 
 /* HAL Handles */
-extern UART_HandleTypeDef huart1; /* USB UART  */
+extern UART_HandleTypeDef huart1; /* USB UART           */
+extern UART_HandleTypeDef huart4; /* XBee wireless UART */
 
 /* Peripheral Macros */
-#define USB_HUART                huart1
+#define USB_HUART         huart1
+#define XBEE_HUART        huart4
 
 #ifdef __cplusplus
 }
