@@ -55,7 +55,22 @@ typedef enum _ERROR_CODE
     ERROR_I2C_HAL_MSP_ERROR            , /* Error in I2C HAL MSP              */
     ERROR_SPI_HAL_MSP_ERROR            , /* Error in SPI HAL MSP              */
     ERROR_UART_HAL_MSP_ERROR           , /* Error in UART HAL MSP             */
+    ERROR_RF_ERROR                     , /* RF tx/rx error                    */
+    ERROR_RF_UNRECOGNIZED_PING         , /* RF ping byte incorrect            */
+    ERROR_USB_UART_ERROR               , /* General UART USB I/O error        */
+    ERROR_XBEE_UART_CONFIG_ERROR         /* Error initializing XBee UART      */
     } ERROR_CODE;
+
+
+/*------------------------------------------------------------------------------
+ Function Prototypes 
+------------------------------------------------------------------------------*/
+
+/* This function is executed in case of error occurrence */
+void Error_Handler
+	(
+	volatile ERROR_CODE error_code
+	);
 
 
 #ifdef __cplusplus
