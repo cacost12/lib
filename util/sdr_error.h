@@ -58,7 +58,8 @@ typedef enum _ERROR_CODE
     ERROR_RF_ERROR                     , /* RF tx/rx error                    */
     ERROR_RF_UNRECOGNIZED_PING         , /* RF ping byte incorrect            */
     ERROR_USB_UART_ERROR               , /* General UART USB I/O error        */
-    ERROR_XBEE_UART_CONFIG_ERROR         /* Error initializing XBee UART      */
+    ERROR_XBEE_UART_CONFIG_ERROR       , /* Error initializing XBee UART      */
+    ERROR_UNSUPPORTED_OP_ERROR           /* Unimplimented feature error       */
     } ERROR_CODE;
 
 
