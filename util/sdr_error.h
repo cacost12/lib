@@ -59,17 +59,18 @@ typedef enum _ERROR_CODE
     ERROR_RF_UNRECOGNIZED_PING         , /* RF ping byte incorrect            */
     ERROR_USB_UART_ERROR               , /* General UART USB I/O error        */
     ERROR_XBEE_UART_CONFIG_ERROR       , /* Error initializing XBee UART      */
+    ERROR_RF_UART_INIT_ERROR           , /* Error initializing wireless UART  */
     ERROR_UNSUPPORTED_OP_ERROR         , /* Unimplimented feature error       */
-    ERROR_THERMO_INIT_ERROR              /* Error initializaing thermocouple  */
+    ERROR_THERMO_INIT_ERROR            , /* Error initializaing thermocouple  */
+    ERROR_PT_ADC_INIT_ERROR            , /* Error initializing PT ADC         */
+    ERROR_LC_ADC_INIT_ERROR            , /* Error initializing LC ADC         */
+    ERROR_THERMO_I2C_INIT_ERROR        , /* Error initializing TC I2C         */
+    ERROR_VALVE_UART_INIT_ERROR          /* Error initializing Valve UART     */
     } ERROR_CODE;
 
 
 /*------------------------------------------------------------------------------
-<<<<<<< HEAD
  Function Prototypes 
-=======
- Prototypes 
->>>>>>> 9559d36 (added thermocouple error code)
 ------------------------------------------------------------------------------*/
 
 /* This function is executed in case of error occurrence */
@@ -78,10 +79,6 @@ void Error_Handler
 	volatile ERROR_CODE error_code
 	);
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 9559d36 (added thermocouple error code)
 #ifdef __cplusplus
 }
 #endif
