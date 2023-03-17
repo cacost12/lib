@@ -71,7 +71,9 @@ typedef enum _ERROR_CODE
     ERROR_SENSOR_CMD_ERROR             , /* Error executing sensor command    */
     ERROR_VALVE_CMD_ERROR              , /* Error executingvalve command      */
     ERROR_BARO_CAL_ERROR               , /* Error calibrating ground pressure */
-    ERROR_DATA_HAZARD_ERROR              /* Potential data corruption error   */
+    ERROR_DATA_HAZARD_ERROR            , /* Potential data corruption error   */
+    ERROR_FSM_INVALID_STATE_ERROR      , /* Invalid state variable value      */
+    ERROR_FSM_INVALID_STATE_TRANSITION_ERROR  /* Error changing state         */
     } ERROR_CODE;
 
 
