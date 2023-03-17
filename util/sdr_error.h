@@ -65,7 +65,11 @@ typedef enum _ERROR_CODE
     ERROR_PT_ADC_INIT_ERROR            , /* Error initializing PT ADC         */
     ERROR_LC_ADC_INIT_ERROR            , /* Error initializing LC ADC         */
     ERROR_THERMO_I2C_INIT_ERROR        , /* Error initializing TC I2C         */
-    ERROR_VALVE_UART_INIT_ERROR          /* Error initializing Valve UART     */
+    ERROR_VALVE_UART_INIT_ERROR        , /* Error initializing Valve UART     */
+    ERROR_IGN_CMD_ERROR                , /* Error executing ignition command  */
+    ERROR_FLASH_CMD_ERROR              , /* Error executing flash command     */
+    ERROR_SENSOR_CMD_ERROR             , /* Error executing sensor command    */
+    ERROR_VALVE_CMD_ERROR                /* Error executingvalve command      */
     } ERROR_CODE;
 
 
