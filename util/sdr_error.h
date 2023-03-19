@@ -73,6 +73,8 @@ typedef enum _ERROR_CODE
     ERROR_BARO_CAL_ERROR               , /* Error calibrating ground pressure */
     ERROR_DATA_HAZARD_ERROR            , /* Potential data corruption error   */
     ERROR_FSM_INVALID_STATE_ERROR      , /* Invalid state variable value      */
+    ERROR_VC_OFFLINE_ERROR             , /* Can't connect to valve controller */
+    ERROR_VC_INIT_ERROR                , /* Error initializing main valves    */
     ERROR_FSM_INVALID_STATE_TRANSITION_ERROR  /* Error changing state         */
     } ERROR_CODE;
 
