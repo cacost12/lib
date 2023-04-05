@@ -130,8 +130,8 @@ extern "C" {
 	#define USB_DETECT_PIN       GPIO_PIN_13
 
 	/* Photogates */
-	#define LOX_PHOTOGATE_PIN   GPIO_PIN_0
-	#define FUEL_PHOTOGATE_PIN  GPIO_PIN_1
+	#define LOX_PHOTOGATE_PIN   GPIO_PIN_1
+	#define FUEL_PHOTOGATE_PIN  GPIO_PIN_0
 
 
 	/*-------------------------------------------------------------------------
