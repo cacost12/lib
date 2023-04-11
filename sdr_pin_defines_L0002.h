@@ -215,6 +215,7 @@ extern "C" {
 	/* Peripheral handles */
 	extern ADC_HandleTypeDef          hadc1;  /* Pressure ADC       */
 	extern ADC_HandleTypeDef          hadc2;  /* Load Cell ADC      */
+	extern ADC_HandleTypeDef          hadc3;  /* Pressure 5 ADC     */
 	extern I2C_HandleTypeDef          hi2c1;  /* Thermocouple I2C   */
 	extern SPI_HandleTypeDef          hspi2;  /* Flash SPI          */
 	extern UART_HandleTypeDef         huart1; /* USB UART           */
@@ -223,6 +224,7 @@ extern "C" {
 
 	/* Peripheral Macros */
 	#define PRESS_ADC                 hadc1
+	#define PRESS5_ADC                hadc3
 	#define LOADCELL_ADC              hadc2
 	#define THERMO_I2C                hi2c1
 	#define FLASH_SPI                 hspi2
