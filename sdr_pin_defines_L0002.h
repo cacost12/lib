@@ -231,6 +231,7 @@ extern "C" {
 	#define USB_HUART                 huart1
 	#define VALVE_HUART               huart2
 	#define XBEE_HUART                huart4
+	#define RS485_HUART               huart4
 
 #endif /* L0002_REV4 */
 
