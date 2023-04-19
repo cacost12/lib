@@ -77,6 +77,7 @@ typedef enum _ERROR_CODE
     ERROR_VC_INIT_ERROR                , /* Error initializing main valves    */
     ERROR_PING_TIMEOUT_ERROR           , /* Ping Timeout                      */
     ERROR_RS485_UART_INIT_ERROR        , /* Error initializing RS485 UART     */
+    ERROR_SOL_CMD_ERROR                , /* Error passing on solenoid command */
     ERROR_FSM_INVALID_STATE_TRANSITION_ERROR  /* Error changing state         */
     } ERROR_CODE;
 
