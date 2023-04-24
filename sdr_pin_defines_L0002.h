@@ -174,6 +174,9 @@ extern "C" {
 	#define THERMO_OC_PIN             GPIO_PIN_14
 	#define THERMO_SC_PIN             GPIO_PIN_15
 
+	/* USB */
+	#define USB_DETECT_PIN            GPIO_PIN_0
+
 
 	/*-------------------------------------------------------------------------
 	 MCU Port Assignments                                                          
@@ -206,6 +209,9 @@ extern "C" {
 	/* Thermocouple */
 	#define THERMO_I2C_GPIO_PORT      GPIOB
 	#define THERMO_ALERT_GPIO_PORT    GPIOE
+
+	/* USB */
+	#define USB_DETECT_GPIO_PORT      GPIOD
 
 
 	/*--------------------------------------------------------------------------
