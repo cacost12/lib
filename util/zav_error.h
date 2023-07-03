@@ -1,7 +1,7 @@
 /*******************************************************************************
 *
 * FILE: 
-* 		sdr_error.h
+* 		zav_error.h
 *
 * DESCRIPTION: 
 *       Contains error codes to pass to the Error_Handler() to allow for 
@@ -10,8 +10,8 @@
 *******************************************************************************/
 
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef SDR_ERROR_H 
-#define SDR_ERROR_H 
+#ifndef ZAV_ERROR_H 
+#define ZAV_ERROR_H 
 
 #ifdef __cplusplus
 extern "C" {
@@ -98,7 +98,7 @@ void Error_Handler
 }
 #endif
 
-#endif /* SDR_ERROR_H */
+#endif /* ZAV_ERROR_H */
 
 /*******************************************************************************
 * END OF FILE                                                                  *

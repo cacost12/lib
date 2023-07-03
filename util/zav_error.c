@@ -1,7 +1,7 @@
 /*******************************************************************************
 *
 * FILE: 
-* 		sdr_error.c
+* 		zav_error.c
 *
 * DESCRIPTION: 
 *       Contains error codes to pass to the Error_Handler() to allow for 
@@ -14,7 +14,7 @@
  Includes 
 ------------------------------------------------------------------------------*/
 #include "main.h"
-#include "sdr_error.h"
+#include "zav_error.h"
 #include "led.h"
 
 
