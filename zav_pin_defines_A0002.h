@@ -158,10 +158,12 @@ Includes
 --------------------------------------------------------------------------*/
 
 /* MCU Peripheral handles for module access */
-extern SPI_HandleTypeDef  flash_hspi;  /* Flash SPI */
-extern UART_HandleTypeDef usb_huart;   /* USB UART  */
+extern I2C_HandleTypeDef  baro_hi2c;   /* Baro Sensor I2C */
+extern SPI_HandleTypeDef  flash_hspi;  /* Flash SPI       */
+extern UART_HandleTypeDef usb_huart;   /* USB UART        */
 
 /* Compatibility Macros, defined for hardware independent APIs */
+#define BARO_I2C          I2C1
 #define FLASH_SPI         SPI2 
 #define USB_UART          USART6
 
