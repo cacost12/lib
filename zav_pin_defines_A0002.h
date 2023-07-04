@@ -158,10 +158,12 @@ Includes
 --------------------------------------------------------------------------*/
 
 /* MCU Peripheral handles for module access */
-extern SPI_HandleTypeDef flash_hspi;  /* Flash SPI */
+extern SPI_HandleTypeDef  flash_hspi;  /* Flash SPI */
+extern UART_HandleTypeDef usb_huart;   /* USB UART  */
 
 /* Compatibility Macros, defined for hardware independent APIs */
-#define FLASH_SPI    SPI2 
+#define FLASH_SPI         SPI2 
+#define USB_UART          USART6
 
 
 #ifdef __cplusplus
