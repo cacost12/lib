@@ -157,6 +157,12 @@ Includes
  MCU Peripheral Configuration 
 --------------------------------------------------------------------------*/
 
+/* MCU Peripheral handles for module access */
+extern SPI_HandleTypeDef flash_hspi;  /* Flash SPI */
+
+/* Compatibility Macros, defined for hardware independent APIs */
+#define FLASH_SPI    SPI2 
+
 
 #ifdef __cplusplus
 }
