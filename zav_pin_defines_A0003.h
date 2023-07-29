@@ -1,10 +1,10 @@
 /*******************************************************************************
 *                                                                              *
 * FILE:                                                                        * 
-* 		zav_pin_defines_A0001.h                                                *
+* 		zav_pin_defines_A0003.h                                                *
 *                                                                              *
 * DESCRIPTION:                                                                 * 
-* 	    Contains all the MCU pin definitions for the base flight computer      *
+* 	    Contains all the MCU pin definitions for the legacy flight computer    *
 *                                                                              *
 *******************************************************************************/
 
@@ -55,25 +55,17 @@ Includes
 #define BP_INT_PIN                GPIO_PIN_3
 
 /* IMU */
-#if   defined( A0002_REV1 )
-	#define IMU_INT_PIN           GPIO_PIN_2
-#elif defined( A0002_REV2 )
-	#define IMU_INT1_PIN          GPIO_PIN_2
-	#define IMU_INT2_PIN          GPIO_PIN_2
-#endif
+#define IMU_INT1_PIN              GPIO_PIN_2
+#define IMU_INT2_PIN              GPIO_PIN_2
 
 /* USB */
 #define USB_SUSPEND_PIN           GPIO_PIN_8
 #define USB_RST_PIN               GPIO_PIN_12
-#ifdef A0002_REV2
-	#define USB_DETECT_PIN        GPIO_PIN_9
-#endif
+#define USB_DETECT_PIN            GPIO_PIN_9
 
 /* Magnetometer */
-#ifdef A0002_REV2
-	#define MAG_INT_PIN           GPIO_PIN_7
-	#define MAG_DRDY_PIN          GPIO_PIN_2
-#endif
+#define MAG_INT_PIN               GPIO_PIN_7
+#define MAG_DRDY_PIN              GPIO_PIN_2
 
 
 /*-----------------------------------------------------------------------------
@@ -105,25 +97,17 @@ Includes
 #define BP_INT_GPIO_PORT          GPIOE
 
 /* IMU */
-#if   defined( A0002_REV1 )
-	#define IMU_INT_GPIO_PORT     GPIOA 
-#elif defined( A0002_REV2 )
-	#define IMU_INT1_GPIO_PORT    GPIOC 
-	#define IMU_INT2_GPIO_PORT    GPIOA 
-#endif
+#define IMU_INT1_GPIO_PORT        GPIOC 
+#define IMU_INT2_GPIO_PORT        GPIOA 
 
 /* USB */
 #define USB_SUSPEND_GPIO_PORT     GPIOA 
 #define USB_RST_GPIO_PORT         GPIOA 
-#ifdef A0002_REV2
-	#define USB_DETECT_GPIO_PORT  GPIOD 
-#endif
+#define USB_DETECT_GPIO_PORT      GPIOD 
 
 /* Magnetometer */
-#ifdef A0002_REV2
-	#define MAG_INT_GPIO_PORT     GPIOE
-	#define MAG_DRDY_GPIO_PORT    GPIOB 
-#endif
+#define MAG_INT_GPIO_PORT         GPIOE
+#define MAG_DRDY_GPIO_PORT        GPIOB 
 
 
 /*--------------------------------------------------------------------------

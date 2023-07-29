@@ -1,7 +1,7 @@
 /*******************************************************************************
 *                                                                              *
 * FILE:                                                                        * 
-* 		pin_defines_A0002.h                                                    *
+* 		zav_pin_defines_A0002.h                                                *
 *                                                                              *
 * DESCRIPTION:                                                                 * 
 * 	    Contains all the MCU pin definitions for the full feature flight       *
@@ -11,8 +11,8 @@
 
 
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef ZENITH_PIN_DEFINES 
-#define ZENITH_PIN_DEFINES 
+#ifndef ZAV_PIN_DEFINES 
+#define ZAV_PIN_DEFINES 
 
 #ifdef __cplusplus
 extern "C" {
@@ -174,7 +174,7 @@ extern UART_HandleTypeDef usb_huart;   /* USB UART        */
 }
 #endif
 
-#endif /* ZENITH_PIN_DEFINES */
+#endif /* ZAV_PIN_DEFINES */
 
 /*******************************************************************************
 * END OF FILE                                                                  * 
