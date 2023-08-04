@@ -53,6 +53,8 @@ Includes
 
 /* Baro Pressure Sensor */
 #define BP_INT_PIN                GPIO_PIN_3
+#define BARO_SCL_PIN              GPIO_PIN_6
+#define BARO_SDA_PIN              GPIO_PIN_7
 
 /* IMU */
 #define IMU_INT1_PIN              GPIO_PIN_2
@@ -62,6 +64,8 @@ Includes
 #define USB_SUSPEND_PIN           GPIO_PIN_8
 #define USB_RST_PIN               GPIO_PIN_12
 #define USB_DETECT_PIN            GPIO_PIN_9
+#define USB_RX_PIN                GPIO_PIN_6
+#define USB_TX_PIN                GPIO_PIN_7
 
 /* Magnetometer */
 #define MAG_INT_PIN               GPIO_PIN_7
@@ -95,6 +99,8 @@ Includes
 
 /* Baro Pressure Sensor */
 #define BP_INT_GPIO_PORT          GPIOE
+#define BARO_SCL_GPIO_PORT        GPIOB
+#define BARO_SDA_GPIO_PORT        GPIOB
 
 /* IMU */
 #define IMU_INT1_GPIO_PORT        GPIOC 
@@ -104,6 +110,8 @@ Includes
 #define USB_SUSPEND_GPIO_PORT     GPIOA 
 #define USB_RST_GPIO_PORT         GPIOA 
 #define USB_DETECT_GPIO_PORT      GPIOD 
+#define USB_RX_GPIO_PORT          GPIOC
+#define USB_TX_GPIO_PORT          GPIOC
 
 /* Magnetometer */
 #define MAG_INT_GPIO_PORT         GPIOE
