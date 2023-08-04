@@ -59,6 +59,8 @@ Includes
 /* IMU */
 #define IMU_INT1_PIN              GPIO_PIN_2
 #define IMU_INT2_PIN              GPIO_PIN_2
+#define IMU_SCL_PIN               GPIO_PIN_10
+#define IMU_SDA_PIN               GPIO_PIN_11
 
 /* USB */
 #define USB_SUSPEND_PIN           GPIO_PIN_8
@@ -105,6 +107,8 @@ Includes
 /* IMU */
 #define IMU_INT1_GPIO_PORT        GPIOC 
 #define IMU_INT2_GPIO_PORT        GPIOA 
+#define IMU_SCL_GPIO_PORT         GPIOB
+#define IMU_SDA_GPIO_PORT         GPIOB
 
 /* USB */
 #define USB_SUSPEND_GPIO_PORT     GPIOA 
